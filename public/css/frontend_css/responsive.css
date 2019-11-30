@@ -1,0 +1,25 @@
+@media only screen and (max-width: 600px) {
+    .navbar-toggler:not(:disabled):not(.disabled) {
+        cursor: pointer;
+        background: red;
+        display: none;
+    }
+    .collapse:not(.show) {
+        display: block;
+        display: flex !important;
+        flex-direction: column;
+    }
+    .navbar-nav {
+        flex-direction: row !important;
+        justify-content: flex-start;
+        margin-left: 0 !important;
+    }
+    .navbar.navbar-dark .breadcrumb .nav-item .nav-link, .navbar.navbar-dark .navbar-nav .nav-item .nav-link{
+        line-height: 35px !important;
+    }
+    a.navbar-brand.text-dark img {
+        width: 100px;
+    }
+}
+
+

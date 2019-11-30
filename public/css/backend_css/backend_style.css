@@ -1,0 +1,166 @@
+.product-create-form {
+    width: 62%;
+    margin: 0 auto;
+}
+.md-form.md-outline {
+    margin: 10px 0 !important;
+}
+.product-content-area {
+    padding: 100px 0;
+}
+.product-content-area  img {
+    width: 100px;
+}
+.product-content-area th {
+    font-size: 15px !important;
+}
+.single-product-content-area {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.single-product-content-area img{
+    width: 40%;
+}
+.product-content-area ul {
+    margin: 0;
+    padding: 0;
+}
+
+.main-panel{
+    background: #fff !important;
+}
+.form-control{
+    border-radius: 5px !important;
+}
+.data-info-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.data-info-list li{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+    padding: 10px 0;
+}
+.data-info-list li p{
+    width: 50%;
+    margin: 0;
+}
+.panel-header-lg {
+    height: 68px;
+    padding-top: 0px !important;
+}
+td.i-name {
+    min-width: 200px;
+}
+
+.product-create-form {
+    width: 62%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+
+
+@media print {
+    .myDivToPrint {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 15px;
+        font-size: 14px;
+        line-height: 18px;
+        z-index: 9999999;
+    }
+
+}
+
+
+
+/**/
+article{margin:10px;}
+
+/*Style for the first level menu bar*/
+ul#menu {
+    width: 100%;
+    height: 3em;
+    margin: 0;
+    padding: 0 10px;
+    color: #eee;
+}
+ul#menu > li{
+    list-style-type: none;
+    position: relative;
+    margin: 0 15px;
+}
+
+label{
+    position:relative;
+    display:block;
+    padding:0 18px 0 12px;
+    line-height:3em;
+    transition:background 0.3s;
+    cursor:pointer;
+}
+
+label:after{
+    content:"";
+    position:absolute;
+    display:block;
+    top:50%;
+    right:5px;
+    width:0;
+    height:0;
+    border-top:4px solid rgba(255,255,255,.5);
+    border-bottom:0 solid rgba(255,255,255,.5);
+    border-left:4px solid transparent;
+    border-right:4px solid transparent;
+    transition:border-bottom .1s, border-top .1s .1s;
+}
+
+
+input:checked ~ label:after{
+    border-top:0 solid rgba(255,255,255,.5);
+    border-bottom:4px solid rgba(255,255,255,.5);
+    transition:border-top .1s, border-bottom .1s .1s;
+}
+
+/*hide the inputs*/
+input{display:none}
+
+/*show the second levele menu of the selected voice*/
+input:checked ~ ul.submenu{
+    max-height:300px;
+    transition:max-height 0.5s ease-in;
+}
+
+/*style for the second level menu*/
+ul.submenu{
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    transition: max-height 0.5s ease-out;
+    min-width: 100%;
+    color: black;
+}
+
+ul.submenu li a{
+    display:block;
+    padding:12px;
+    color:#ddd;
+    text-decoration:none;
+    transition:background .3s;
+    white-space:nowrap;
+}
+
+ul.submenu li a:hover{
+}
